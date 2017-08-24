@@ -1,0 +1,80 @@
+
+}button, input, select, textarea {
+
+	position:relative;
+    left: 40%;
+
+
+}
+input, textarea, select {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 25px;
+    border: 2px;
+    padding: 12px;
+    width: 10px;
+    height: 10px;
+	position:relative;
+    left: 40%;	0
+
+}
+
+label {
+	display: block;
+    position:relative;
+    margin:  center;
+	text-align: center;
+	color: lightgoldenrodyellow;
+	font-family: Helvetica;
+	font-size:80%;
+
+
+
+
+
+}
+input[type="checkbox"] + label {
+	display: inline;
+	text-align: center;
+	position:relative;
+    left: 40%;
+
+
+}
+fieldset {
+	border-width: 0;
+	padding: 0;
+	color: white;
+	font-family: Helvetica;
+	margin: center;
+
+}
+input[type="text"], input[type="tel"], input[type="email"] {
+	width: 20%;
+	height: 150%;
+	margin : .3em auto .5em auto;
+
+
+}
+#zip { max-width: 2em; }
+select, fieldset {
+	margin: .2em auto 1.2em auto;
+
+
+}
+legend {
+	margin: center;
+	font-weight: bold;
+	font-size-adjust:auto;
+	text-align: center;
+	font-family: Helvetica;
+
+
+}
+center{
+	color: white;
+	font-weight: bold;
+	font-family: Helvetica;
+	text-align: center;		
+	}	
+
