@@ -108,8 +108,25 @@ body {
 
 </fieldset>
 
-		<input type="submit" value="Submit" type = "button" name="summit">
+		<input type="submit" value="Submit" id="submit_info" type = "button" name="summit">
 
 	</form>
 </body>
+<script src="../static/js/jquery-3.2.0.js"></script>
+<script>
+$(function() {
+  $('#submit_info').click(function() {
+   $.ajax({
+    url: '/submit',
+    data: $('form').serialize(),
+    type: 'POST',
+    success: function(response) {
+        alert(response);
+    },
+    error: function(error) {
+    }
+   });
+  });
+ });
+</script>
 </html>
