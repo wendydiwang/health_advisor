@@ -1,5 +1,4 @@
-import os, sys
-import userinfo
+#import userinfo
 from flask import Flask, render_template, request
 
 '''
@@ -8,14 +7,15 @@ if getattr(sys, 'frozen', False):
     app = Flask(__name__, template_folder=template_folder)
 else:
 '''
-app = Flask(__name__, template_folder='/Users/mac/Desktop/health_advisor/health_advisor/templates')
+app = Flask(__name__)
 
-app.run(port=50000)
 
-@app.route('/', methods=['GET'])
+@app.route('/')
 def show_index():
     return render_template('userinfo.html')
 
+
+'''
 @app.route('/submit', methods=['POST'])
 def submit():
 
@@ -26,3 +26,6 @@ def submit():
     # upload userinfo to database
     print(request.form)
 
+'''
+if __name__ == '__main__':
+    app.run()
