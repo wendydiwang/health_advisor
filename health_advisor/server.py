@@ -1,4 +1,4 @@
-import os, sys
+import app
 import userinfo
 from flask import Flask, render_template, request
 
@@ -25,4 +25,7 @@ def submit():
                         request.form['term'])
     # upload userinfo to database
     print(request.form)
+    image_path, advice = app.get_plan(user_info)
+    # render a template and pass the image_path to it as an argument
+
 
